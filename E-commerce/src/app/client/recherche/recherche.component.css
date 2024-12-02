@@ -1,0 +1,22 @@
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: green;
+}
+
+input {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.position-relative {
+    display: flex;
+}

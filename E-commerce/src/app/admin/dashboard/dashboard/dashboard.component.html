@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+<div class="main">
+    <div class="navbar">
+        <div>
+            <a [routerLink]="['/admin/gestion-produit']" routerLinkActive="active">
+                <h6>Produit</h6>
+            </a>
+        </div>
+        <div class="vertical-line"></div>
+        <div>
+            <a [routerLink]="['/admin/gestion-categorie']" routerLinkActive="active">
+                <h6>Categorie</h6>
+            </a>
+        </div>
+        <div class="vertical-line"></div>
+        <div>
+            <a [routerLink]="['/admin/gestion-commande']" routerLinkActive="active">
+                <h6>Commande</h6>
+            </a>
+        </div>
+    </div>
+    <div class="buttom">
+        <router-outlet></router-outlet>
+    </div>
+</div>

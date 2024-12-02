@@ -1,0 +1,55 @@
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #007bff;
+    color: white;
+    height: 60px;
+}
+
+img {
+    height: 80px;
+    object-fit: cover;
+}
+
+.left {
+    padding-left: 100px;
+}
+
+.right {
+    padding-right: 100px;
+
+}
+
+h6 {
+    color: white;
+    margin: 0;
+}
+
+.middle {
+    display: flex;
+}
+
+.vertical-line {
+    background-color: white;
+    width: 1px;
+    height: 20px;
+    margin: 0 15px;
+}
+
+h6:hover {
+    color: #020508;
+    transform: scale(1.2);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+button {
+    background-color: transparent;
+    border: transparent;
+}
+
+button:hover {
+    background-color: transparent;
+    border: transparent;
+}

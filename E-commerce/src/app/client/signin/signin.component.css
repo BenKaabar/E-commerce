@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(54, 54, 54, 0.185);
+}
+
+.box {
+    padding: 50px 100px;
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    margin-bottom: 10px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+}
+
+h1 {
+    text-align: center;
+}

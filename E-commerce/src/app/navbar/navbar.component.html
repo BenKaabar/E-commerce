@@ -1,0 +1,56 @@
+<div class="main">
+    <div class="left"><img src="/assets/images/logo/logo.png" alt="logo" routerLink="/Accueil" style="cursor: pointer;">
+    </div>
+
+    <!-- <div class="middle">
+        <div><a routerLink="/Accueil">
+                <h6>Accueil</h6>
+            </a></div>
+        <div class="vertical-line"></div>
+        <div><a routerLink="/Accueil">
+                <h6>categorie 1</h6>
+            </a></div>
+        <div class="vertical-line"></div>
+        <div><a routerLink="/Accueil">
+                <h6>categorie 2</h6>
+            </a></div>
+        <div class="vertical-line"></div>
+        <div><a routerLink="/Accueil">
+                <h6>categorie 3</h6>
+            </a></div>
+        <div class="vertical-line"></div>
+        <div><a routerLink="/Accueil">
+                <h6>categorie 4</h6>
+            </a></div>
+        <div class="vertical-line"></div>
+        <div><a routerLink="/Accueil">
+                <h6>A propos</h6>
+            </a></div>
+    </div> -->
+
+
+    <div *ngIf="currentClient != null" class="right">
+        <div class="dropdown">
+            <button class="btn btn-secondary" type="button" (click)="toggleDropdown()" routerLink="/Accueil">
+                <h6>{{ this.currentClient.username }}</h6>
+            </button>
+            <ul class="dropdown-menu" [class.show]="dropdownVisible">
+                <li><a class="dropdown-item" (click)="logout()" style="cursor: pointer;">Logout</a></li>
+            </ul>
+        </div>
+    </div>
+    <div *ngIf="currentadmin != null" class="right">
+        <div class="dropdown">
+            <button class="btn btn-secondary" type="button" (click)="toggleDropdown()" routerLink="/admin">
+                <h6>{{ this.currentadmin.username }}</h6>
+            </button>
+            <ul class="dropdown-menu" [class.show]="dropdownVisible">
+                <li><a class="dropdown-item" (click)="logout()" style="cursor: pointer;">Logout</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div *ngIf="currentClient == null && currentadmin == null" class="right"><a routerLink="/signin">
+            <h6>Espace Client</h6>
+        </a></div>
+</div>

@@ -1,0 +1,90 @@
+.bottom {
+    margin: 20px 200px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 20px;
+}
+
+.itemproduct {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid green;
+    border-radius: 1rem;
+    height: 300px;
+}
+
+img {
+    height: 180px;
+    margin: 0 25%;
+    object-fit: cover;
+}
+
+.image {
+    height: 180px;
+    border-bottom-style: solid;
+    border-color: green;
+}
+
+.panier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    margin-top: 10px;
+    width: 70%;
+    border-radius: 1rem;
+}
+
+.Prix {
+    padding-left: 15px;
+    color: green
+}
+
+.Nom {
+    padding-left: 15px;
+}
+
+.desription {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.top {
+    display: flex;
+    justify-content: space-evenly;
+    height: 60px;
+    background-color: green;
+}
+
+input {
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 3px;
+    height: 45px;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.position-relative {
+    display: flex;
+}
+
+.input button {
+    width: 40px;
+    height: 45px;
+    margin-top: 3px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    /* padding-top: 50px; */
+}

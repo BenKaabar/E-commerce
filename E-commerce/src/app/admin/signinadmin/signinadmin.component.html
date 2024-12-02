@@ -1,0 +1,18 @@
+<div class="main">
+    <div class="box">
+        <h1>Se connecter admin</h1>
+        <label for="username" class="form-label">Nom d'utilisateur</label>
+        <div class="username">
+            <input id="username" type="text" [(ngModel)]="username" class="form-control" />
+        </div>
+
+        <label for="password" class="form-label">Mot de passe</label>
+        <div class="password">
+            <input id="password" type="password" [(ngModel)]="password" class="form-control" />
+        </div>
+
+        <button type="button" class="btn btn-success" (click)="signin()">Se connecter</button>
+
+        <button type="button" class="btn btn-info" routerLink="/signup">S'inscrire</button>
+    </div>
+</div>
